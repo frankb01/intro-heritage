@@ -1,20 +1,16 @@
 <?php
 
+// Private = on ferme à clés
+// Protected = on ferme à clés et on donne un double des clés aux enfants
+
 // Ma classe
 class Person
 {
     /**
-     * La propriété private n'est pas accessible depuis l'enfant
-     * caroline-goldbronn
-     * 15:14
-     * encore heureux mais après l'héritage, ça change
+     * protected = accessible aux enfants
      */
-    
-    // Private = on ferme à clés
-    // Protected = on ferme à clés et on donne un double des clés aux enfants
-
-    // protected = accessible aux enfants
     protected $name;
+    public $gender = 'man';
     
     public function __construct($nameParam='')
     {
@@ -23,6 +19,7 @@ class Person
     
     public function sayHello()
     {
-        echo 'Bonjour, je suis '.$this->name;
+        echo 'Person : Bonjour, je suis '.$this->name.' et du genre '.$this->gender;
+        echo '<br> de la classe '.__CLASS__;
     }
 }
