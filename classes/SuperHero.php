@@ -26,4 +26,14 @@ class SuperHero extends Person
             $this->capacity = $capacity;
         }
     }
+
+    // Le super héros se présente
+    public function superSayHello()
+    {
+        // $this->sayHello();
+        parent::sayHello(); // mot clé parent = appel à une méthode du parent
+
+        // Et j'ajoute un message supplémentaire
+        echo ' et mon pouvoir, c\' est : ' . $this->capacity;
+    }
 }
