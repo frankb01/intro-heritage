@@ -36,4 +36,12 @@ class SuperHero extends Person
         // Et j'ajoute un message supplémentaire
         echo ' et mon pouvoir, c\' est : ' . $this->capacity;
     }
+
+    // Surcharge / Override
+    // Remplacement au sein des instances de la classe SuperHero, de la méthode sayHello()
+    // La méthode reste la même pour les instance de la classe Person
+    public function sayHello()
+    {
+        echo 'Bonjour, je suis '.$this->name . ', un super héros !';
+    }
 }
