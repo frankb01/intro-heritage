@@ -1,3 +1,3 @@
 # intro-heritage
 
-## introduction au systeme d'heriatge entre classes
+## introduction au systeme d'héritage entre classes
